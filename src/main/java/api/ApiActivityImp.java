@@ -13,7 +13,7 @@ public class ApiActivityImp implements ApiActivity{
      */
     @Override
     public String runGetApiRequest(String input) {
-        String apiResponse = "This is the mock API response";
+        String apiResponse = "This is the mock API response " + input;
         return apiResponse;
     }
 

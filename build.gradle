@@ -1,3 +1,7 @@
+/*
+    AUTHOR: AJITH KEERIKKATTIL
+    DATE: 12/12/2021
+ */
 plugins {
     id 'java'
 }
@@ -20,4 +24,14 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+task initiateApi(type: JavaExec) {
+    main = 'api.InitiateApi'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task startWorker(type: JavaExec) {
+    main = 'api.ApiWorker'
+    classpath = sourceSets.main.runtimeClasspath
 }
