@@ -35,7 +35,6 @@ public class ApiActivityImp implements ApiActivity {
             while ((line = reader.readLine()) != null) {
                 result.append(line.toString());
             }
-            System.out.println(result);
         } catch (Exception e) {
         }
 
