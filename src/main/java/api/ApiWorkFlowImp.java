@@ -4,6 +4,7 @@ import io.temporal.activity.ActivityOptions;
 import io.temporal.workflow.Workflow;
 import java.time.Duration;
 
+
 /*
     WORKFLOW INTERFACE IMPLEMENTATION (WORKFLOW)
 
@@ -33,6 +34,7 @@ public class ApiWorkFlowImp implements ApiWorkFlow{
          */
 
         /* Calling the implemented activity method using the stub */
+
         String  resp = apiActivity.runGetApiRequest(input);
         return resp;
     }

@@ -28,7 +28,7 @@ public class InitiateApi {
         ApiWorkFlow workflow = client.newWorkflowStub(ApiWorkFlow.class, options);
 
         /* Running the workflow @WorkflowMethod */
-        workflow.runApiRequest("test");
+        workflow.runApiRequest("lima");
 
         System.exit(0);
 
